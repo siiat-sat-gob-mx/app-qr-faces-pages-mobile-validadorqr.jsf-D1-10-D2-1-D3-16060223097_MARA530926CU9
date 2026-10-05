@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validador QR</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #333333;
+      font-size: 13px;
+      padding: 10px 20px;
+    }
+
+    /* Header */
+    .sat-header {
+      text-align: center;
+      margin-bottom: 15px;
+      padding: 10px 0;
+    }
+
+    .sat-header img {
+      max-height: 50px;
+      height: auto;
+    }
+
+    /* Mensaje superior */
+    .info-message {
+      border: 1px solid #d3d3d3;
+      border-radius: 8px;
+      padding: 8px 12px;
+      margin-bottom: 15px;
+      background-color: #ffffff;
+      color: #333333;
+      font-size: 12px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    /* Paneles / Tarjetas */
+    .panel {
+      border: 1px solid #bda881;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      background-color: #ffffff;
+    }
+
+    .panel-header {
+      background: linear-gradient(to bottom, #d4be96 0%, #b89d6c 100%);
+      color: #ffffff;
+      padding: 5px 12px;
+      font-size: 12px;
+      font-weight: bold;
+      border-top-left-radius: 7px;
+      border-top-right-radius: 7px;
+      text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+    }
+
+    .panel-body {
+      padding: 10px 15px;
+    }
+
+    /* Tablas de datos */
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .data-table td {
+      padding: 2px 5px;
+      vertical-align: top;
+      font-size: 12px;
+      line-height: 1.4;
+    }
+
+    .data-table td.label {
+      text-align: right;
+      width: 200px;
+      color: #333333;
+      font-weight: normal;
+      padding-right: 10px;
+    }
+
+    .data-table td.value {
+      text-align: left;
+      color: #888888;
+      font-weight: normal;
+    }
+
+    /* Ajuste para pantallas pequeñas */
+    @media (max-width: 600px) {
+      .data-table td.label {
+        width: 40%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER SAT -->
+  <div class="sat-header">
+    <img src="https://siat.sat.gob.mx/app/qr/images/HACIENDA-SAT.jpg" alt="Hacienda SAT">
+  </div>
+
+  <!-- MENSAJE SUPERIOR -->
+  <div class="info-message">
+    El RFC: MARA530926CU9, tiene asociada la siguiente información.
+  </div>
+
+  <!-- PANEL: DATOS DE IDENTIFICACIÓN -->
+  <section class="panel">
+    <div class="panel-header">Datos de Identificación</div>
+    <div class="panel-body">
+      <table class="data-table">
+        <tbody>
+          <tr>
+            <td class="label">CURP:</td>
+            <td class="value">MARA530926HCLRMN04</td>
+          </tr>
+          <tr>
+            <td class="label">Nombre:</td>
+            <td class="value">ANTONIO JAVIER</td>
+          </tr>
+          <tr>
+            <td class="label">Apellido Paterno:</td>
+            <td class="value">MARTINEZ</td>
+          </tr>
+          <tr>
+            <td class="label">Apellido Materno:</td>
+            <td class="value">RAMON</td>
+          </tr>
+          <tr>
+            <td class="label">Fecha Nacimiento:</td>
+            <td class="value">26-09-1953</td>
+          </tr>
+          <tr>
+            <td class="label">Fecha de Inicio de operaciones:</td>
+            <td class="value">30-09-1990</td>
+          </tr>
+          <tr>
+            <td class="label">Situación del contribuyente:</td>
+            <td class="value">REACTIVADO</td>
+          </tr>
+          <tr>
+            <td class="label">Fecha del último cambio de situación:</td>
+            <td class="value">05-10-2026</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- PANEL: DATOS DE UBICACIÓN -->
+  <section class="panel">
+    <div class="panel-header">Datos de Ubicación (domicilio fiscal, vigente)</div>
+    <div class="panel-body">
+      <table class="data-table">
+        <tbody>
+          <tr>
+            <td class="label">Entidad Federativa:</td>
+            <td class="value">NUEVO LEON</td>
+          </tr>
+          <tr>
+            <td class="label">Municipio o delegación:</td>
+            <td class="value">MONTERREY</td>
+          </tr>
+          <tr>
+            <td class="label">Colonia:</td>
+            <td class="value">EMILIANO ZAPATA</td>
+          </tr>
+          <tr>
+            <td class="label">Tipo de vialidad:</td>
+            <td class="value">CALLE</td>
+          </tr>
+          <tr>
+            <td class="label">Nombre de la vialidad:</td>
+            <td class="value">FELIPE ANGELES</td>
+          </tr>
+          <tr>
+            <td class="label">Número exterior:</td>
+            <td class="value">220</td>
+          </tr>
+          <tr>
+            <td class="label">Número interior:</td>
+            <td class="value"></td>
+          </tr>
+          <tr>
+            <td class="label">CP:</td>
+            <td class="value">64390</td>
+          </tr>
+          <tr>
+            <td class="label">AL:</td>
+            <td class="value">NUEVO LEON 1</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- PANEL: CARACTERÍSTICAS FISCALES -->
+  <section class="panel">
+    <div class="panel-header">Características fiscales (vigente)</div>
+    <div class="panel-body">
+      <table class="data-table">
+        <tbody>
+          <tr>
+            <td class="label">Régimen:</td>
+            <td class="value">Régimen de Sueldos y Salarios e Ingresos Asimilados a Salarios</td>
+          </tr>
+          <tr>
+            <td class="label">Fecha de alta:</td>
+            <td class="value">10-12-1984</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+</body>
+</html>
+
+  <!-- TU SCRIPT ACTUAL AQUÃ -->
+  
+
+
+
+
+</body></html>
